@@ -1,0 +1,35 @@
+<!--pages/user/user.wxml-->
+<view class="my_top">
+    <image src="../../images/purple.png"></image>
+</view>
+
+<view class="user_info" wx:if="{{(openid=='') || (!userInfo.username)}}">
+    <view class="top_title">您还未授权登录</view>
+    <button type="default" bindtap="getopenid">登录</button>
+</view>
+
+<view class="user_info" wx:if="{{openid!=''}}">
+    <view  wx:if="{{userInfo.username}}">
+        <view class="profile">
+                <image src="{{userInfo.profile}}" mode="cover"></image>
+        </view>
+        <view class="username">
+                <text>你好，{{userInfo.username}}</text>
+        </view>
+    </view>
+</view>
+
+<view class="nav_my">
+    <view class="nav_item">
+        <image src="../../images/appointment.png" class="nav_icon"></image>
+        <view class="nav_text">我的预约</view>
+    </view>
+    <view class="nav_item" bindtap="toInfo">
+        <image src="../../images/profile.png" class="nav_icon"></image>
+        <view class="nav_text">个人资料</view>
+    </view>
+    <view class="nav_item">
+        <image src="../../images/service.png" class="nav_icon"></image>
+        <view class="nav_text">服务中心</view>
+    </view>
+</view>

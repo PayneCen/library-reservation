@@ -1,0 +1,11 @@
+<!--pages/news/news.wxml-->
+<text class="title">{{title}}</text>
+<view class="time">发布时间：{{time}}</view>
+<view class="pic">
+    <image src="{{picture}}"></image>
+</view>
+<view class="news-main">
+    <rich-text class="content" nodes="{{html}}">
+    
+    </rich-text>
+</view>

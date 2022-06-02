@@ -1,0 +1,51 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/reservation/reservation",
+        "pages/user/user",
+        "pages/check/check",
+        "pages/qr/qr",
+        "pages/info/info",
+        "pages/news/news",
+        "pages/booking/booking"
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#6B397F",
+        "navigationBarTitleText": "北京建筑大学 图书馆",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#707070",
+        "selectedColor": "#6B397F",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": " ",
+                "iconPath": "./images/icon/home.png",
+                "selectedIconPath": "./images/icon/home2.png"
+            },
+            {
+                "pagePath": "pages/reservation/reservation",
+                "text": " ",
+                "iconPath": "./images/icon/choose.png",
+                "selectedIconPath": "./images/icon/choose2.png"
+            },
+            {
+                "pagePath": "pages/check/check",
+                "text": " ",
+                "iconPath": "./images/icon/check.png",
+                "selectedIconPath": "./images/icon/check2.png"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": " ",
+                "iconPath": "./images/icon/user.png",
+                "selectedIconPath": "./images/icon/user2.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
+}

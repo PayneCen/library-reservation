@@ -1,0 +1,63 @@
+<!--pages/booking/booking.wxml-->
+<view class="back">
+  <!-- <image src="../../images/5d21f5a20be59.jpg"></image> -->
+</view>
+<view class="main">
+  <view class="title">选座</view>
+  <view class="chooseinfo">
+    <view class="chooseinfo_box">
+      <view class="choosezz_box_title">
+        <view class="choosezz_box_title_icon">
+          <image src="../../images/calendar.png"></image>
+        </view>
+        <view class="choosezz_box_title_text">
+          选择日期
+        </view>
+      </view>
+      <view class="chooseinfo_mian">
+        <view class="choosezz_mian_text">2021.02.10</view>
+        <view class="choosezz_mian_icon">∨</view>
+      </view>
+    </view>
+    <view class="chooseinfo_box1">
+      <view class="choosezz_box_title">
+        <view class="choosezz_box_title_icon">
+          <image src="../../images/time.png"></image>
+        </view>
+        <view class="choosezz_box_title_text">
+          选择时间
+        </view>
+      </view>
+      <view class="chooseinfo_mian">
+        <view class="choosezz_mian_text">{{sjxx[sjxxindex][0]}}</view>
+        <view class="choosezz_mian_icon">∨</view>
+      </view>
+    </view>
+  </view>
+  <view class="seatinfo">
+    <view class="seatinfo_box_title">
+      <view class="choosezz_box_title_icon">
+        <image src="../../images/position.png"></image>
+      </view>
+      <view class="choosezz_box_title_text">
+        座位信息
+      </view>
+    </view>
+    <view class="seatinfo_wz">{{rmbs[0].zwlist[0].floor}} —— {{rmbs[0].num}}</view>
+  </view>
+  <view class="userinfo">
+    <view class="seatinfo_box_title">
+      <view class="choosezz_box_title_icon">
+        <image src="../../images/user.png"></image>
+      </view>
+      <view class="choosezz_box_title_text">
+        用户信息
+      </view>
+    </view>
+    <view class="seatinfo_wz">姓名：{{userinfo[0].username}}</view>
+    <view class="seatinfo_wz">班级：{{userinfo[0].class}}</view>
+    <view class="seatinfo_wz">学院：{{userinfo[0].college}}</view>
+    <view class="seatinfo_wz">学号：{{userinfo[0].classid}}</view>
+  </view>
+  <view class="lq" bindtap="confirm">确认选座</view>
+</view>

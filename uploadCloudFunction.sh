@@ -1,0 +1,1 @@
+"/Applications/wechatwebdevtools.app/Contents/MacOS/cli" cloud functions deploy --e cloud1-1gbakf2q09dba4c3 --n quickstartFunctions --r --project "/Users/paynecen/Payne/payneWeb/library-reservation" --report_first --report

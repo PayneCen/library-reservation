@@ -1,0 +1,37 @@
+<!--pages/info/info.wxml-->
+<view class="info">
+    <image class="card" src="../../images/purple.png"></image>
+    <image class="profile" src="{{myInfo[0].profile}}"></image>
+    <view class="content">
+        <view class="info_title">姓名：{{myInfo[0].username}}</view>
+        <view class="info_title">学院：{{myInfo[0].college}}</view>
+        <view class="info_title">班级：{{myInfo[0].class}}</view>
+        <view class="info_title">学号：{{myInfo[0].classid}}</view>
+    </view>
+</view>
+
+<form catchsubmit="formSubmit">
+    <view class="update">
+        <view class="inp">
+        <view class="tit">电话：</view>
+        <input name="tel" type="text" value="{{myInfo[0].tel}}" placeholder="请输入电话" placeholder-style="color:#bbb"/>
+        </view>
+        <view class="inp">
+        <view class="tit">邮箱：</view>
+        <input name="mail" type="text" value="{{myInfo[0].mail}}" placeholder="请输入邮箱" placeholder-style="color:#bbb"/>
+        </view>
+        <view class="inp">
+        <view class="tit">地址：</view>
+        <input name="address" type="text" value="{{myInfo[0].address}}" placeholder="请输入地址" placeholder-style="color:#bbb"/>
+        </view>
+        <view class="inp">
+        <view class="tit">邮编：</view>
+        <input name="zip" type="text" value="{{myInfo[0].zip}}" placeholder="请输入邮编" placeholder-style="color:#bbb"/>
+        </view>
+    </view>
+
+    <view class="btn">
+        <button class="btn_update" form-type="submit">修 改</button>
+        <button class="btn_cancle" form-type="reset">清 空</button>
+    </view>
+</form>

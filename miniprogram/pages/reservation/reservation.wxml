@@ -1,0 +1,35 @@
+<!--pages/reservation/reservation.wxml-->
+<view class="nav">
+    <view class="nav_main">
+        <view class="nav_main_title">位置：</view>
+        <picker bindchange="bindChangePlace" value="{{index}}" range="{{placeArr}}">
+            <view class="picker">{{placeArr[index]}}</view>
+        </picker>
+    </view>
+    <view class="nav_main">
+        <view class="nav_main_title">状态：</view>
+        <picker bindchange="bindChangeStatus" value="{{index_s}}" range="{{statusArr}}">
+            <view class="picker">{{statusArr[index_s]}}</view>
+        </picker>
+    </view>
+</view>
+<vew class="seat">
+    <view class="box_main" wx:for="{{whereArr}}" wx:for-item="item1" wx:key="_id">
+        <view class="show_floor">{{item1.floor}}</view>
+        <view wx:for="{{seatArr}}" wx:for-item="item" wx:key="_id" wx:if="{{item.floor == item1._id}}"  bindtap="showxq" id="{{item._id}}">
+            <view wx:if="{{item.situation==0}}" class="seat_row seat_0">
+                <view class="seat_no">{{item.num}}</view>
+                <view class="seat_status">可预约</view>
+            </view>
+            <view wx:if="{{item.situation==1}}" class="seat_row seat_1">
+                <view class="seat_no">{{item.num}}</view>
+                <view class="seat_status">不可预约</view>
+            </view>
+            <view wx:if="{{item.situation==2}}" class="seat_row seat_2">
+                <view class="seat_no">{{item.num}}</view>
+                <view class="seat_status">已预约</view>
+            </view>
+        </view>
+        <view style="clear: both;"></view>
+    </view>
+</vew>

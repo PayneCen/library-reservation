@@ -1,0 +1,31 @@
+/* pages/news/news.wxss */
+.title {
+    width: 90%;
+    margin: 20rpx auto;
+    line-height: 60rpx;
+    font-weight: 600;
+    font-size: 40rpx;
+    text-align: center;
+    color: #303030;
+    display: block;
+}
+
+.time {
+    color: #888888;
+    text-align: center;
+    font-size: 28rpx;
+}
+
+.content {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.pic, .news-main {
+    width: 95%;
+    margin: 10rpx auto;
+}
+
+.pic image {
+    width: 100%;
+}
